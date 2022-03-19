@@ -34,6 +34,7 @@ namespace Business.DependencyResolvers.AutoFac
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
+           //aop
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
                 .EnableInterfaceInterceptors(new ProxyGenerationOptions()
                 {
